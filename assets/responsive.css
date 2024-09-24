@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  header .menu-mobile i {
+    display: block;
+  }
+
+  header .menu-mobile i {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: -100rem;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: block;
+    opacity: 0;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 2rem 0;
+    align-items: center;
+  }
+
+  header .navbar ul li {
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  header .navbar ul li a {
+    font-size: 3rem;
+    display: block;
+  }
+
+  /* Khi hover hoặc active */
+  .menu-mobile:hover .fa-bars,
+  .menu-mobile:active .fa-bars {
+    display: none; /* Ẩn icon menu khi hover hoặc active */
+  }
+
+  .menu-mobile:hover .fa-xmark,
+  .menu-mobile:active .fa-xmark {
+    display: block; /* Hiển thị icon close khi hover hoặc active */
+  }
+
+  header .navbar {
+    top: 5rem;
+    opacity: 1;
+    transition: 0.5s;
+    color: var(--primary-color);
+  }
+
+  /* Section 02 */
+  .home .content p.desc {
+    padding: 1.5rem 2rem;
+  }
+
+  .home::before {
+    display: none;
+  }
+
+  .course .box-containe {
+    width: 100%;
+  }
+
+  .contact .rows {
+    flex-flow: column;
+  }
+
+  .contact .rows .image img {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .contact .rows .form-contact {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 566px) {
+  .about .wrapper {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+
+  .wrapper .content {
+    order: 1;
+  }
+
+  .wrapper .content button {
+    display: block;
+    margin-top: 2rem;
+    margin: 0 auto 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .teacher .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: calc(98% - 3rem);
+    gap: 3rem;
+  } */
+
+  /* .teacher .card-container .card {
+    width: 35rem;
+  } */
+
+  .home .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: calc(90% - 3rem);
+
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    width: calc(90% - 3rem);
+    /* gap: 3rem; */
+    margin: 0 auto;
+  }
+}
